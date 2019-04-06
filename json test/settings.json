@@ -1,0 +1,25 @@
+{
+	"window.zoomLevel": 0,
+	"workbench.iconTheme": "vscode-icons",
+	"workbench.colorCustomizations": {
+		"list.inactiveSelectionBackground": "#C5DEF0",
+		"sideBar.background": "#0a0708",
+        "sideBar.foreground": "#eacbdf",
+        "color0": "#0D0712",
+        "color1": "#990A63",
+        "color2": "#D50F6E",
+        "color3": "#464698",
+        "color4": "#BD46A5",
+        "color5": "#449FBF",
+        "color6": "#B9A3CA",
+        "color7": "#eacbdf",
+        "color8": "#a38e9c",
+        "color9": "#990A63",
+        "color10": "#D50F6E",
+        "color11": "#464698",
+        "color12": "#BD46A5",
+        "color13": "#449FBF",
+        "color14": "#B9A3CA",
+        "color15": "#eacbdf"
+	}
+}
