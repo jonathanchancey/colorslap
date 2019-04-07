@@ -1,15 +1,24 @@
 import json
 from jsoncomment import JsonComment
+import pystache
 from os.path import expanduser
 
 
 # builds the path to the colors.json file we'll be reading from
+# TODO add user config option
 home = expanduser("~")
 colorfile = "/.cache/wal/colors.json"
 colorfile = home + colorfile
 
+templateFile = "default.mustache"
+
 # uses JsonComment as a our parser 
 parser = JsonComment(json)
+renderer = pystache.Renderer()
+
+
+
+
 
 
 # try to load the colors into a dictionary
@@ -26,6 +35,9 @@ print(color_dict)
 # Should that be a user option?
 with open('settings.json', 'r') as fs:
     settings_dict = parser.load(fs)
+
+renderer.render_path(templateFile,)
+print(renderer.render_path(templateFile, ))
 
 print(settings_dict)
 settings_dict["workbench.colorCustomizations"]["sideBar.background"] = color_dict["special"]["background"]
