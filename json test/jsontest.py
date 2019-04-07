@@ -28,6 +28,12 @@ with open('settings.json', 'r') as fs:
     settings_dict = parser.load(fs)
 
 print(settings_dict)
+settings_dict["workbench.colorCustomizations"]["sideBar.background"] = color_dict["special"]["background"]
+settings_dict["workbench.colorCustomizations"]["sideBar.foreground"] = color_dict["special"]["foreground"]
+print(settings_dict)
+
+# with open('data.json', 'w') as outfile:
+#     json.dump(data, outfile)
 
 
 # print(settings_dict['workbench.colorCustomizations']['sideBar.background'])
